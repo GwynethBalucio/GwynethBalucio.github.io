@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Baraha'laala Mo Kaya</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="icon" type="image/png" href="assets/0_favicon.png"/>
+</head>
+<body>
+    <div class="firstPage">
+        <img class="imgtxt"src="assets/0_Hometitle.png" alt="Baraha'laala Mo Kaya txt img">
+
+        <div class="row">
+            <div class="column"><img src="assets/0_btnPlay.png" id="play-btn" class="playGame-btn"></div>
+            <div class="column"><img src="assets/0_btnScores.png" id="scoremodal-btn" class="score-btn">
+                <div id="modalScore" class="modal-score">
+                    <div class="modal-content-score">
+                        <div class="modal-body">
+                            <img class="scoresheettxt"src="assets/0_Scoresheet.png" alt="Score Sheet"></td>
+                            <table class="s_table">
+                                <tr>
+                                    <td class="scoretable"><b>Level</b></td>
+                                    <td class="scoretable"><b>Current Score</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="scoretable">2x2</td>
+                                    <td class="scoretable"><span id="score2"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="scoretable">4x4</td>
+                                    <td class="scoretable"><span id="score4"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="scoretable">6x6</td>
+                                    <td class="scoretable"><span id="score6"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="scoretable">8x8</td>
+                                    <td class="scoretable"><span id="score8"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="levelPage" id="level">
+        <div class="chooseLevel"><img src="assets/0_chooselevel.png"></div>
+        <div class="rowLevel">
+            <div class="columnL"><a href="2x2.html"><img src="assets/0_2x2.png" id="play-btn" class="playGame-btn"></a></div>
+            <div class="columnL"><a href="4x4.html"><img src="assets/0_4x4.png" id="play-btn" class="playGame-btn"></a></div>
+            <div class="columnL"><a href="6x6.html"><img src="assets/0_6x6.png" id="play-btn" class="playGame-btn"></a></div>
+            <div class="columnL"><a href="8x8.html"><img src="assets/0_8x8.png" id="play-btn" class="playGame-btn"></a></div>
+        </div>
+    </div>
+
+
+<!--modal-->
+<img id="info-icon" class="icon" src="assets/0_i.png" alt="Details and References">
+    <div id="modalInfo" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <img class="imgtxtsmall"src="assets/0_modaltitle.png" alt="Baraha'laala Mo Kaya txt img"></td>
+                <p>Final Project (Memory Game)</p>
+                <div class="paragraph">
+                    <p>In partial fulfillment of the requirements for the subject Foundations of Computer Science (CMSC 12).</p>
+                    <p>prepared by: Gwyneth Balucio | CMSC 12 Lab-B1L</p>
+                    <hr class="line">
+                    <p>All images and audio(except for the flip sound*) were made in Aseprite and BeepBox respectively.</p>
+                </div>
+                
+                <div class="references">
+                    <table>
+                        <tr><p style="text-align: center;"><b>REFERENCES</b></p></tr>
+                        <tr>
+                            <th><b>Video Tutorials</b></th>
+                            <th><b>Websites</b></th>
+                            <th><b>Books (PDF)</b></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li><a class="link" href="https://www.youtube.com/watch?v=28VfzEiJgy4&t=292s">How to Code a Card Matching Game - YouTube</a></li>
+                                    <li><a class="link" href="https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=244s">How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition - YouTube</a></li>
+                                    <li><a class="link" href="https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1s">Memory Card Game - JavaScript Tutorial - YouTube</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><a class="link" href="https://www.w3schools.com/">w3schools.com</a></li>
+                                    <li><a class="link" href="https://stackoverflow.com/">stackoverflow.com</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li class="link">HTML and CSS: Design and Build Websites by Jon Duckett</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="paragraph" style="text-align: right;">*The flip sound was retrieved from <a class="link" href="https://www.storyblocks.com/audio/stock/magazine-cover-turn-page-rlsnh7anldrk0wxx4et.html">storyblocks.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="scriptHome.js" async></script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+body {
+    background-image: url("assets/bg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.icon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.homeicon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.icon:hover {
+    filter: drop-shadow(5px 5px 5px rgba(224, 181, 39, 0.685));
+}
+
+.imgtxt {
+    margin-top: 20px;
+    left: 0;
+}
+
+.imgtxtsmall {
+    margin: 20px;
+    float: left;
+}
+
+.imgtxtsmallcon, .imgnxt2txt{
+    padding: 10px;
+}
+
+.imgotext.visible{
+    position: fixed;
+    top: 10;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation: imgotext-grow 500ms forwards;
+}
+
+.overlay-c2s.visible{
+    transform: scale(1);
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation: overlay-c2s-grow 500ms forwards;
+}
+
+.overlay-after.visible{
+    transform: scale(1);
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation: overlay-c2s-grow 500ms forwards;
+    text-align: center;
+    font-size: 20px;
+    color: wheat;
+}
+
+.overlay-after-text {
+    animation: overlay-after-text-grow 500ms forwards;
+    top: 0;
+    margin-top:303px;
+    margin-left: 43%;
+    margin-right: 43%;
+    text-align: center;
+    font-size: 20px;
+    color: wheat;
+    position: fixed;
+    z-index: 100;
+}
+
+.overlay-after-gameover {
+    display: block;
+    z-index: 100;
+    position: fixed;
+    margin-top: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay-after-victory {
+    display: block;
+    z-index: 100;
+    position: fixed;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: overlay-after-text-grow 500ms forwards;
+}
+
+.overlay-after-btn:hover {
+    filter: drop-shadow(5px 5px 5px rgba(224, 159, 76, 0.685));
+}
+
+.overlay-after-btn1:hover {
+    filter: drop-shadow(5px 5px 5px rgba(224, 159, 76, 0.685));
+}
+
+.column {
+    float: left;
+    width: 150px;
+    display: block;
+    z-index: 100;
+    margin: 10px;
+    
+}
+
+.row {
+    z-index: 100;
+    position: fixed;
+    margin-top: 25%;
+    margin-left: 36.807%;
+    margin-right: 36.807%;
+    top: 0;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    display: block;
+    z-index: 100;
+    position: fixed;
+}
+
+@keyframes overlay-after-text-grow {
+    from {transform: scale(0);}
+    to {transform: scale(1)}
+}
+
+@keyframes overlay-c2s-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+    }
+}
+
+@keyframes imgotext-grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+* {box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+.game-info {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #e9bf88;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    margin: 25px;
+    justify-content: center;
+    perspective: 750px;
+}
+
+.game-info-container {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    height: 175px;
+    width: 125px;    
+}
+
+.cface {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
+}
+
+.cback {
+    background-color: #2a241e;
+    border-radius: 10px;
+}
+.cfront {
+    background-color: wheat;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.corner {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+
+.corner-top-left {
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+}
+
+.corner-top-right {
+    transform: rotate(180deg);
+    top: 0;
+    right: 0;
+}
+
+.corner-bot-left {
+    bottom: 0;
+    left: 0;
+}
+
+.corner-bot-right {
+    transform: rotate(270deg);
+    bottom: 0;
+    right: 0;
+}
+
+.brain {
+    align-self: center;
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+
+
+.cvalue {
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+
+.cface:hover .brain{
+    transform: scale(1);
+}
+
+.cface:hover .cvalue{
+    transform: scale(1);
+}
+
+.cface:hover .corner{
+    width: 42px;
+    height: 42px;
+    transition: transform 100ms ease-in-out;
+}
+
+.card.visible .cback{
+    transform: rotateY(-180deg);
+}
+
+.card.visible .cfront{
+    transform: rotateY(0);
+}
+
+.modal, .modal-score {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:(0, 0, 0);
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    background-color: wheat;
+    width: 50%;
+    border-radius: 10px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: #2a241e;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content-score {
+    background-color: wheat;
+    margin: 5% auto 5% auto; 
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.scoresheettxt {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.s_table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.scoretable {
+    text-align: center;
+    font-size: 18px;
+    color: #2a241e;
+    opacity: 0.9;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    font-size: 15px
+}
+
+.paragraph, .link {
+    font-size: 13px; 
+    color: #2a241ebb
+}
+
+.line {
+    border: 1px solid #2a241e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+td {
+    vertical-align: top;
+}
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}

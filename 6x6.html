@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Baraha'laala Mo Kaya</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="icon" type="image/png" href="assets/0_favicon.png"/>
+</head>
+
+<body>
+    <img class="imgtxt"src="assets/0_title.png" alt="Baraha'laala Mo Kaya txt img" width="408px" height=auto>
+    <a href="index.html"><img class="homeicon" src="assets/0_home-icon.png" alt="Home"></a>
+        <div id="overlay" class="overlay-c2s visible"><img id="imgotext" class="imgotext visible" src="assets/0_c2s.png">
+        </div>
+        <div id="game-over" class="overlay-after"></div>
+            <div id="game-over-screen" class="overlay-after-gameover"></div>
+        <div id="victory" class="overlay-after">
+            <div id="victory-screen" class="overlay-after-victory"></div>
+        </div>
+        <div id="oafter-text" class="overlay-after-text"></div>
+
+        <div class="row">
+            <div class="column"><div id="oafter-btn" class="overlay-after-btn"></div></div>
+            <div class="column"><a href="index.html"><div id="oafter-btn1" class="overlay-after-btn1"></div></a></div>
+        </div>
+
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time: <span id="time-remaining">125</span>
+            </div>
+            <div class="game-info">
+                Flips: <span id="flips">0</span>
+            </div>
+            <div class="game-info">
+                Score: <span id="score">0</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/01.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/01.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/02.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/02.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/03.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/03.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/04.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/04.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/05.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/05.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/11.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/11.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/12.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/12.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/13.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/13.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/14.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/14.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/15.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/15.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/21.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/21.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/22.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/22.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/23.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/23.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/24.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/24.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/31.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/31.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/32.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/32.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/33.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/33.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/34.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cback cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="brain" src="assets/0.png">
+            </div>
+
+            <div class="cfront cface">
+                <img class="corner corner-top-left" src="assets/000.png">
+                <img class="corner corner-top-right" src="assets/000.png">
+                <img class="corner corner-bot-left" src="assets/000.png">
+                <img class="corner corner-bot-right" src="assets/000.png">
+
+                <img class="cvalue" src="assets/34.png">
+            </div>
+        </div>
+    </div>
+
+    <!--modal-->
+    <img id="info-icon" class="icon" src="assets/0_i.png" alt="Details and References">
+    <div id="modalInfo" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img class="imgtxtsmall"src="assets/0_modaltitle.png" alt="Baraha'laala Mo Kaya txt img"></td>
+                <p>Final Project (Memory Game)</p>
+                <div class="paragraph">
+                    <p>In partial fulfillment of the requirements for the subject Foundations of Computer Science (CMSC 12).</p>
+                    <p>prepared by: Gwyneth Balucio | CMSC 12 Lab-B1L</p>
+                    <hr class="line">
+                    <p>All images and audio(except for the flip sound*) were made in Aseprite and BeepBox respectively.</p>
+                </div>
+                
+                <div class="references">
+                    <table>
+                        <tr><p style="text-align: center;"><b>REFERENCES</b></p></tr>
+                        <tr>
+                            <th><b>Video Tutorials</b></th>
+                            <th><b>Websites</b></th>
+                            <th><b>Books (PDF)</b></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li><a class="link" href="https://www.youtube.com/watch?v=28VfzEiJgy4&t=292s">How to Code a Card Matching Game - YouTube</a></li>
+                                    <li><a class="link" href="https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=244s">How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition - YouTube</a></li>
+                                    <li><a class="link" href="https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1s">Memory Card Game - JavaScript Tutorial - YouTube</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><a class="link" href="https://www.w3schools.com/">w3schools.com</a></li>
+                                    <li><a class="link" href="https://stackoverflow.com/">stackoverflow.com</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li class="link">HTML and CSS: Design and Build Websites by Jon Duckett</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="paragraph" style="text-align: right;">*The flip sound was retrieved from <a class="link" href="https://www.storyblocks.com/audio/stock/magazine-cover-turn-page-rlsnh7anldrk0wxx4et.html">storyblocks.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script6.js" async></script>
+</body>
+</html>
